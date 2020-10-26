@@ -22,7 +22,7 @@ app.get('/cotacao', (req, res) => {
             quantidade: convert.toMoney(quantidade)
         });
     } else {
-        res.render('cotacao', {error: 'Valores inválidos'})
+        res.render('cotacao', {error: 'Valores inválidos!'});
     }
 })
 

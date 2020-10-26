@@ -1,9 +1,38 @@
 <%- include('header') %>
-        <div class="result">
+
             <% if (error) { %>
-                <%= error %>
+                <main>
+                    <div class="result">
+                        <form action="/" class="result-wrapper">
+                            <p> <%= error %> </p>
+                            <button>Retornar</button>
+                        </form>
+                    </div>
+        
+                    <div class="logo-img">
+                        <div class="wrapper">
+                            <h1><a href="/"><img src="/logo.png" alt="Convert My Money" id="logo"></a></h1>
+                            <img src="/wallet.svg" alt="wallet" id="wallet">
+                        </div>
+                    </div>
+                </main>
+                
             <% } else { %>
-                <%= quantidade %> dólares na cotação <%= cotacao %> é igual a <%= conversao %> reais.
-            <% } %>
-        </div>
+                    <main>
+                        <div class="result">
+                            <form action="/" class="result-wrapper">
+                                <p> <%= quantidade %> dólares na cotação <%= cotacao %> <br> é igual a <%= conversao %> reais. </p>
+                                <button>Retornar</button>
+                            </form>
+                        </div>
+            
+                        <div class="logo-img">
+                            <div class="wrapper">
+                                <h1><a href="/"><img src="/logo.png" alt="Convert My Money" id="logo"></a></h1>
+                                <img src="/wallet.svg" alt="wallet" id="wallet">
+                            </div>
+                        </div>
+                    </main>
+                <% } %>
+
 <%- include('footer') %>

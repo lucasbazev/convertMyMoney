@@ -1,9 +1,20 @@
 <%- include('header') %>
 
-        <form action="/cotacao" method="GET">
-            <input name="cotacao"placeholder="Cotação">
-            <input name="quantidade" placeholder="Quantidade de dólares">
-            <button>Converter!</button>
-        </form>
+        <main>
+            <div class="form">
+                <form action="/cotacao" method="GET">
+                    <input name="cotacao" placeholder="Cotação">
+                    <input name="quantidade" placeholder="Quantidade de dólares">
+                    <button>Converter!</button>
+                </form>
+            </div>
+
+            <div class="logo-img">
+                <div class="wrapper">
+                    <h1><a href="/"><img src="/logo.png" alt="Convert My Money" id="logo"></a></h1>
+                    <img src="/wallet.svg" alt="wallet" id="wallet">
+                </div>
+            </div>
+        </main>
 
 <%- include('footer') %>

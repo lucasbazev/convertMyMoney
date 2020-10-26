@@ -1,37 +1,124 @@
-body {
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-h1 img {
-    width: 489px;
-    margin-top: 20px;
+body {
+    text-align: center;
+    background: #E5E5E5;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.form {
+    background: #FFFFFF;
+    width: 440px;
+    height: 580px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -3px 0px 15px 6px #ccc;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 45%;
 }
 
 input {
-    border: 1px solid black;
     background: #fdfdfd;
     font-size: 20px;
     padding: 10px;
-    margin: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
 }
 
 button {
-    border: 1px solid black;
-    background: #d8d8d8;
+    background: #52796F;
+    color: #FFFFFF;
     font-size: 20px;
+    font-weight: 400;
     padding: 10px;
     margin-top: 4px;
-    width: 265px;
+    width: 266px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background: #5f8f83f6;
+}
+
+.logo-img {
+    background: #52796F;
+    width: 740px;
+    height: 580px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 3px 0px 15px 6px #ccc;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+
+#logo {
+    width: 389px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 1180px;
+    height: 30px;
+    border: 1px solid #52796F;
+    border-radius: 10px;
+}
+
+.links li a {
+    color: #33323D;
 }
 
 .result {
-    padding: 10px;
-    border: 1px solid #d8d8d8;
-    background: #fdfdfd;
+    background: #FFFFFF;
+    width: 440px;
+    height: 580px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -3px 0px 15px 6px #ccc;
+}
+
+.result-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45%;
+}
+
+.result-wrapper p {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
